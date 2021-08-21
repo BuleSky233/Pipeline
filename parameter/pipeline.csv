@@ -1,0 +1,20 @@
+﻿name,cycle,anomaly cycle
+noisysine_small_test,300,"5,10,20,30"
+chfdb_chf01_275_2,200,12
+chfdb_chf13_45590_2,150,19
+chfdbchf15_2,150,15
+ltstdb_20221_43_2,170,4
+ltstdb_20321_240_2,200,4
+mitdb__100_180_2,250,7
+mitdbx_mitdbx_108_2,370,"11,27,28,29,30"
+qtdbsel102_2,200,21
+qtdbsele0606_2,140,8
+stdb_308_2,400,6
+xmitdb_x108_2,400,10
+TEK_ALL,1000,"4,7,11"
+dutch_power_demand,672,"0,12,17,18,19,51"
+Patient_respiration,150,"6,33"
+taxi,330,8
+GPS_trajectory_data,2200,"2,5"
+ann_gun_CentroidA_2,150,"2,14,15,16,18"
+arma_test,500,"100,101,160"
