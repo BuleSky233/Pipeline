@@ -104,8 +104,9 @@ def IDK2(X, t, psi,width,psi2=None):
                 break
 
             score_of_windows.append(IDK(featuremap_count, t, p))
+        return score_of_windows
     else:
-        score_of_windows.append(IDK(featuremap_count, t, psi2))
+        return IDK(featuremap_count, t, psi2)
     return score_of_windows  # size(7-,window_num),size(len(X),t)
 
     return pre_scores / t,pre_scores_cmp/t

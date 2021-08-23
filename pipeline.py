@@ -1,6 +1,6 @@
 import sys
 from sys import argv
-from GDK import *
+from Experiment import *
 import pandas as pd
 from sklearn.kernel_approximation import Nystroem
 import os

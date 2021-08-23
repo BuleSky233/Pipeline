@@ -1,5 +1,6 @@
 import numpy as np
 from scipy.spatial.distance import pdist,squareform
+from sklearn.preprocessing import StandardScaler
 
 if __name__ == '__main__':
     data=np.array([[2,3,4,5],[1,2,3,4]],dtype=float)
@@ -9,7 +10,8 @@ if __name__ == '__main__':
         data[i]/=tem
     print(1j*data)
 
-    a=[[3,4,5],[1,2,3]]
+    a=[[-2],[-1],[3]]
+    print(StandardScaler().fit_transform(a))
     ans=np.dot(a[0],a[1])
 
     onepoint_matrix=[[1,2,3],[2,3,3],[2,1,3]]
