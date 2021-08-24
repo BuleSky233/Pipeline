@@ -71,19 +71,25 @@ def IDK_square_Exp(data_name, cycle, ano_cycles, outfolder):
     best_para = (-1, -1)
 
     labels = get_label(df, cycle, ano_cycles)
+    flag = False
     for i in range(len(psi1_list)):
+        if flag is True or psi1_list[i]>=len(df):
+            break
         for j in range(len(psi2_list)):
             if psi2_list[j] >= (int)(len(df) / cycle):
                 break
             score = 0
             for time in range(10):
-                result = IDK2(X=df, t=100, width=cycle, psi=psi1_list[i],
-                              psi2=psi2_list[j])
+                result = IDK_T(X=df, t=100, width=cycle, psi=psi1_list[i],
+                               psi2=psi2_list[j])
                 score += roc_auc_score(labels, -result)
             score /= 10
             if score > best:
                 best = score
                 best_para = (i, j)
+            if best == 1:
+                flag = True
+                break
     best_paraval = (psi1_list[best_para[0]], psi2_list[best_para[1]])
     outputfile = outfolder + "/" + data_name + '.txt'
     with open(outputfile, "w") as f:

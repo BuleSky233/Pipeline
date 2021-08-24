@@ -33,7 +33,7 @@ def experiment_shortTS(method,outputfile):
         result[i]=func(data_list[i],cycle_list[i],ano_list[i],outputfile)
     name = ['data', 'result']
     test = pd.DataFrame(columns=name, data=np.vstack((data_list, result)).T)
-    output_file = outputfile+ '/result.csv'
+    output_file = outputfile+ '/'+outputfile+'.csv'
     test.to_csv(output_file, encoding='gbk')
 
 

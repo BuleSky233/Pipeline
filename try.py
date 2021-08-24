@@ -19,4 +19,5 @@ if __name__ == '__main__':
         pdist(onepoint_matrix, lambda u, v: np.dot(u, v) / np.linalg.norm(u) / np.linalg.norm(v)))
     a=(1e-4, 1e-3)
     print(str(a))
+    print(1.0==1)
     pass
