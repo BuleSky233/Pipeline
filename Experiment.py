@@ -51,7 +51,7 @@ def GDK_square_Exp(data_name, cycle, ano_cycles, outfolder):
 
 
 def IDK_square_Exp(data_name, cycle, ano_cycles, outfolder):
-    from IDK2 import IDK2
+    from IDK_T import IDK_T
     from os import listdir
     from os.path import isfile, join
     # data
